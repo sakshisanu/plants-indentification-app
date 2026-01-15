@@ -1,0 +1,17 @@
+0 Plumeria Alba
+1 Polyalthia Longifolia
+2 Tecoma Stans
+3 Leucas Aspera
+4 Tectona Grandis
+5 Euphorbia Pulcherrima
+6 Bougainvillea Glabra
+7 Vinca Rosea
+8 Ixora Coccinea
+9 Pseuderanthemum Maculatum
+10 Hibiscus rosa-sinensis
+11 Ficus Auriculata
+12 Dieffenbachia Amoena
+13 Euphorbia Milii
+14 Acalypha Wikesiana
+15 Acalypha Hispida
+16 Clerodendrum Thomsoniae
