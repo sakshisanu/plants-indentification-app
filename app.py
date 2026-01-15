@@ -39,7 +39,8 @@ confidence = predictions[0][predicted_index]
 st.subheader("Prediction")
 st.success("🌱 Plant identified successfully!")
 st.write(f"Plant name: {class_names[predicted_index]}")
-st.write(f"Confidence: {confidence * 100:.2f}%")
+st.write("Confidence:"'float(confidence) * 100,"%")
+
 
 
 
