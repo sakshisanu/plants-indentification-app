@@ -1,6 +1,14 @@
 import streamlit as st
 import numpy as np
 from PIL import Image, ImageOps
+import tensorflow as tf
+@st.cache_resource
+def load_model():
+    return tf.keras.models.load_model("keras_model.h5")
+
+model = load_model()
+with open("labels.txt", "r") as f:
+    class_names = [line.strip() for line in f.readlines()]
 
 st.title("🌱 Plant Identification App")
 
@@ -32,6 +40,7 @@ st.subheader("Prediction")
 st.success("🌱 Plant identified successfully!")
 st.write(f"Plant name: {class_names[predicted_index]}")
 st.write(f"Confidence: {confidence * 100:.2f}%")
+
 
 
 
