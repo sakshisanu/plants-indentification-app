@@ -24,11 +24,15 @@ if uploaded_file is not None:
     image_array = image_array / 255.0
     image_array = np.expand_dims(image_array, axis=0)
 
-    # 5. Show result
-    st.subheader("Prediction")
-    st.success("🌿 Plant identified successfully")
-    st.write("Plant name: *Example Plant*")
-    st.write("Confidence: *90%*")
+    predictions = model.predict(image_array)
+predicted_index = np.argmax(predictions)
+confidence = predictions[0][predicted_index]
+
+st.subheader("Prediction")
+st.success("🌱 Plant identified successfully!")
+st.write(f"Plant name: {class_names[predicted_index]}")
+st.write(f"Confidence: {confidence * 100:.2f}%")
+
 
 
 
