@@ -10,9 +10,8 @@ if uploaded_file is not None:
 
     size = (224, 224)
     image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
+    
+st.image(image, caption="Uploaded Image", use_column_width=True)
    
 
-
- st.image(image, caption="Uploaded Image", use_column_width=True)
-   
 
