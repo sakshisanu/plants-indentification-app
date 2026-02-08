@@ -34,7 +34,8 @@ if uploaded_file is not None:
     confidence_score = prediction[0][index]
 
     st.success(f"🌱 Prediction: {class_name}")
-    st.info(f"Confidence: {confidence_score:.2f}"
+    st.info(f"Confidence: {confidence_score:.2f}")
+
 
 
 
